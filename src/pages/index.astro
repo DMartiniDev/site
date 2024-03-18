@@ -39,9 +39,22 @@ import '@fontsource/roboto/900.css';
 				margin: 0;
 				font-size: 30px;
 			}
-		}		
+		}
+		@media (prefers-color-scheme: dark) {
+			.wrapper {
+				background: black;
+				color: white;
+			}
+		}
+
+		@media (prefers-color-scheme: light) {
+			.wrapper {
+				background: white;
+				color: black;
+			}
+		}
 	</style>
-	<body>
+	<body class="wrapper">
 		<h1 class="title">Dave Mart&iacute;nez</h1>
 		<h2 class="subtitle">Software Engineer</h2>
 	</body>
