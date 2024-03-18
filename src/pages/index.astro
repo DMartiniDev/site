@@ -1,5 +1,6 @@
 ---
-
+import '@fontsource/roboto/100.css';
+import '@fontsource/roboto/900.css';
 ---
 
 <html lang="en">
@@ -11,12 +12,37 @@
 		<title>Dave Martinez</title>
 	</head>
 	<style>
-		.title {
-			margin-top: 60px;
-			text-align: center;
+		body {
+			font-family: 'Roboto', sans-serif;
 		}
+		.title {
+			margin-top: 26px;
+			margin-bottom: 0;
+			text-align: center;
+			font-size: 38px;
+			font-weight: 900;
+		}
+		.subtitle {
+			margin: 0;
+			text-align: center;
+			font-size: 24px;
+			font-weight: 100;
+		}
+
+		@media (width > 400px) {
+			.title {
+				margin-top: 60px;
+				margin-bottom: 3px;
+				font-size: 48px;
+			}
+			.subtitle {
+				margin: 0;
+				font-size: 30px;
+			}
+		}		
 	</style>
 	<body>
-		<h1 class="title">Dave Martinez</h1>
+		<h1 class="title">Dave Mart&iacute;nez</h1>
+		<h2 class="subtitle">Software Engineer</h2>
 	</body>
 </html>
